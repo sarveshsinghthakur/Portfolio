@@ -1,3 +1,8 @@
+@media (min-width:769px){
+.mobilescreen{
+	display: none;
+}
+
 .childnav{
 	display: inline;
 	margin-top:48px;
@@ -628,4 +633,31 @@ form button {
 }
 textarea {
   height: 150px;
+}
+}
+
+@media(max-width:600px){
+	.mainScreen{
+		display: none;
+		content-visibility: hidden;
+	}
+	.mobilescreen{
+		h1{
+			background-color: #2f8d46;
+			background-image: url(
+  "https://media.geeksforgeeks.org/wp-content/uploads/20231218222854/1.png");
+			  background-repeat: repeat;
+			  -webkit-background-clip: text;
+			  -webkit-text-fill-color: transparent;
+			  margin-top: 200px;
+			  font-size: 60px;
+			  text-align: center;
+			  font-weight: bold;
+			  text-transform: uppercase;
+			  font-family: 'Steelfish Rg', 'helvetica neue', 
+							  helvetica, arial, sans-serif;
+			  font-weight: 800;
+			  -webkit-font-smoothing: antialiased;
+		}
+	}
 }
