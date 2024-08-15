@@ -1,185 +1,3 @@
-/* contact form */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-:root {
-  --white-color: hsl(0, 0%, 100%);
-  --black-color: hsl(0, 0%, 0%);
-  --body-font: "Poppins", sans-serif;
-  --h1-font-size: 1.75rem;
-  --normal-font-size: 1rem;
-  --small-font-size: .813rem;
-  --font-medium: 500;
-}
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body,
-input,
-button {
-  font-size: var(--normal-font-size);
-  font-family: var(--body-font);
-}
-
-body {
-  color: var(--white-color);
-}
-
-input,
-button {
-  border: none;
-  outline: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-.login {
-  position: relative;
-  height: 100vh;
-  display: grid;
-  align-items: center;
-}
-.login__img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-.login__form {
-  position: relative;
-  background-color: hsla(0, 0%, 10%, 0.1);
-  border: 2px solid var(--white-color);
-  margin-inline: 1.5rem;
-  padding: 2.5rem 1.5rem;
-  border-radius: 1rem;
-  backdrop-filter: blur(8px);
-}
-.login__title {
-  text-align: center;
-  font-size: var(--h1-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: 2rem;
-}
-.login__content, .login__box {
-  display: grid;
-}
-.login__content {
-  row-gap: 1.75rem;
-  margin-bottom: 1.5rem;
-}
-.login__box {
-  grid-template-columns: max-content 1fr;
-  align-items: center;
-  column-gap: 0.75rem;
-  border-bottom: 2px solid var(--white-color);
-}
-.login__icon, .login__eye {
-  font-size: 1.25rem;
-}
-.login__input {
-  width: 100%;
-  padding-block: 0.8rem;
-  background: none;
-  color: var(--white-color);
-  position: relative;
-  z-index: 1;
-}
-.login__box-input {
-  position: relative;
-}
-.login__label {
-  position: absolute;
-  left: 0;
-  top: 13px;
-  font-weight: var(--font-medium);
-  transition: top 0.3s, font-size 0.3s;
-}
-.login__eye {
-  position: absolute;
-  right: 0;
-  top: 18px;
-  z-index: 10;
-  cursor: pointer;
-}
-.login__box:nth-child(2) input {
-  padding-right: 1.8rem;
-}
-.login__check, .login__check-group {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.login__check {
-  margin-bottom: 1.5rem;
-}
-.login__check-label, .login__forgot, .login__register {
-  font-size: var(--small-font-size);
-}
-.login__check-group {
-  column-gap: 0.5rem;
-}
-.login__check-input {
-  width: 16px;
-  height: 16px;
-}
-.login__forgot {
-  color: var(--white-color);
-}
-.login__forgot:hover {
-  text-decoration: underline;
-}
-.login__button {
-  width: 100%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: var(--white-color);
-  font-weight: var(--font-medium);
-  cursor: pointer;
-  margin-bottom: 2rem;
-}
-.login__register {
-  text-align: center;
-}
-.login__register a {
-  color: var(--white-color);
-  font-weight: var(--font-medium);
-}
-.login__register a:hover {
-  text-decoration: underline;
-}
-
-/* Input focus move up label */
-.login__input:focus + .login__label {
-  top: -12px;
-  font-size: var(--small-font-size);
-}
-
-.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
-  top: -12px;
-  font-size: var(--small-font-size);
-}
-@media screen and (min-width: 576px) {
-  .login {
-    justify-content: center;
-  }
-  .login__form {
-    width: 432px;
-    padding: 4rem 3rem 3.5rem;
-    border-radius: 1.5rem;
-  }
-  .login__title {
-    font-size: 2rem;
-  }
-}
-
 .childnav{
 	display: inline;
 	margin-top:48px;
@@ -209,11 +27,6 @@ body{
 	background-color: rgb(0, 0, 0);
 	overflow: scroll;
 }
-.icons{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 #navitem{
 	color: #595959;
 	font-size: 3vh;
@@ -229,6 +42,7 @@ body{
 	align-items: flex-end;
 	
 }
+
 .parentnav{
 	display: flex;
 	border-radius: 10%;
@@ -323,11 +137,6 @@ body{
 	align-items: center;
 	gap: 15rem;
   }
-  
-.login__input{
-	color: #000000;
-}
-
   
   .home-content{
 	display: flex;
@@ -674,24 +483,35 @@ body{
 	overflow: hidden;
   border-right: .15em solid orange;
   white-space: nowrap;
-  font-size: 1rem;
+  font-size: 1.6rem;
   width: 0;
 }
 .edu-conatiner {
     position: relative;
 }
+.d-flex a{
+border-radius: 50%;
+}
 #carouselExampleCaptions{
 	width: 600px;
 	height: 200px;
-	left: 42vh;
-	margin-bottom: 8vh;
+
+    left:42vh;
 	box-shadow: 0 0 500px var(--main-color);
 	border-radius: 40%;
+}
+
+@media screen and (max-width:500px) {
+	.carousel-inner{
+		display: grid;
+		place-items: top;
+	}
 }
 .education{
 	gap: 10vh;
 	margin-left: 11vh;
 }
+
 #carouselExampleCaptions:hover{
 	transform: scale(1.13);
 	transition: 0.3s ease-in-out;
@@ -729,141 +549,83 @@ body{
 				background-color: white;
 				color: #000000;
 }
-@media screen and (max-width: 576px){
-.parentnav{
-	background-color: transparent;
-	margin-bottom: 10vh;
-	
-}
-.childnav1{
-	font-size: 100px;
-	
+@media only screen and (max-width : 600px) {
+	.home{
+		display: grid;
+		grid-template-rows: 50px 50px 50px 1fr 50px 50px 50px;
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		".home-img"
+		".home-content h1 h3"
+		".socialicon"
+		".btn alert-primary";
 
-}
-.childnav1,.childnav2{
-	
-	display: inline;
-	word-spacing: 10px;
-	
-}
-.childnav{
-	word-break: break-all;
-	margin-bottom: 5vh;
-	color: #0057f8;
-	gap: 100px;
-	content-visibility: hidden;
-}
-.home{
-	display: list-item;
-    width: 400px;
-	scroll-behavior: auto;
-	flex-direction: column;
-}
-.card-title,.card-text,.card-text1,.card-title1{
-	font-size: 10px;
-	overflow: hidden;
-	content: none;
-    flex-direction: column;
-}
-.card-text1,.card-text{
-	content-visibility: hidden;
-	flex-direction: column;
-}
+	}
 
-.card img-fluid mx-4{
-	 height: 10vh;
-	 flex-direction: column;
-}
-#click{
-content-visibility: hidden;
-}
-.carousel-inner{
-	max-width: fit-content;
-	box-shadow: none;
-	margin-left: 150px;
-	border-radius: 10%;
-	/* content-visibility: hidden; */
-}
-.visually-hidden,.carousel-control-prev
-{
-	/* content-visibility: hidden; */
-}
-.carousel slide {
-	box-shadow: none;
-	display: inline-block;
-	max-block-size: 1px;
-	justify-content: first baseline;
-	background-color: transparent;
-	
-}
-.edu-conatiner{
-	width: 300px;
-	height: auto;
-	display: flex;
-}
-.education{
-	flex-direction: column;
-}
- .edu-container {
-    flex-direction: column;
-  }
- .card.border-primary.mb-3.mx-3 {
-    display: block;
-    width: 100%;
-  }
-.flip-card{
-display: flex;
-max-width: 28vh;
-align-items: center;
-justify-content: center;
-}
-.contact{
-	flex-direction: column;
-}
-.social-icons{
-	display: flex;
-	flex-direction: row;
-}
-.login__form{
-	max-width: fit-content;
-	color: #000000;
-}
-#hi{
-	padding-left: 2vh;
-}
-.login__input{
-	color: #000000;
-}
-.icons{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.social-icons {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	width: 100%; 
-	margin-left: ;
-  }
-  
-  .social-icons > * {
-			display: inline-flex;
-  }
-  *{
-	scroll-behavior: smooth;
-	scroll-margin-block-end: initial;
-  }
-#projects{
-	display: flex;
-	flex-direction: column;
-	
-}
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
 }
 
 
+/*  */
+
+/* General styles */
+body {
+    background-color: rgb(0, 0, 0);
+    overflow: scroll;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #101010;
+    --text-color: rgb(0, 0, 0);
+    --main-color: #0057f8;
+    --white: #ffffff;
+}
+
+
+
+input, textarea {
+  display: block;
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 15px;
+  border: 1px solid lightgray;
+  font-size: 15px;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  -webkit-transition: all .25s;
+     -moz-transition: all .25s;
+      -ms-transition: all .25s;
+       -o-transition: all .25s;
+          transition: all .25s;
+}
+input:focus, textarea:focus {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.19);
+}
+form button {
+  border: none;
+  padding: 10px 83px;
+  font-size: 20px;
+  background-color: black;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+textarea {
+  height: 150px;
 }
