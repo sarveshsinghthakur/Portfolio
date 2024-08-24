@@ -506,7 +506,7 @@ border-radius: 50%;
 	border-radius: 40%;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
 	.carousel-inner{
 		display: grid;
 		place-items: top;
@@ -636,7 +636,7 @@ textarea {
 }
 }
 
-@media(max-width:600px){
+@media(max-width:700px){
 	.mainScreen{
 		display: none;
 		content-visibility: hidden;
