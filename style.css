@@ -325,6 +325,7 @@ body {
 
 .card-text {
     font-size: 1rem;
+    color: white;
 }
 
 .btn-primary {
@@ -368,6 +369,7 @@ body {
 
     .card-text {
         font-size: 0.9rem;
+        color: white;
     }
 }
 /* Navigation Bar */
