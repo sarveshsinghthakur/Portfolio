@@ -119,13 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
              url: "#",
              category: "dl",
              language: "Python"
-         },
-         {
-             name: "Sentiment Analysis with RNN",
-             description: "Recurrent neural network for sentiment analysis of text data.",
-             url: "#",
-             category: "dl",
-             language: "Python"
          }
      ];
      
@@ -140,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function() {
          
          col.innerHTML = `
              <div class="project-card card h-100">
-                 <img src="${defaultImage}" class="card-img-top" alt="${project.name}">
                  <div class="card-body">
                      <h3>${project.name}</h3>
                      <p>${project.description}</p>
@@ -188,6 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
      observer.observe(element);
  });
 });
+
 
 
 
