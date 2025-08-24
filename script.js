@@ -62,11 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
      if (project.name.toLowerCase().includes('dl') || project.name.toLowerCase().includes('deep') || project.description?.toLowerCase().includes('deep learning')) category = 'dl';
      
      col.setAttribute('data-category', category);
-     
-     const defaultImage = category === 'ml' ? 'https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Machine+Learning' : 
-                       category === 'dl' ? 'https://via.placeholder.com/300x200/9013FE/FFFFFF?text=Deep+Learning' : 
-                       'https://via.placeholder.com/300x200/50E3C2/FFFFFF?text=Web+Project';
-     
      col.innerHTML = `
          <div class="project-card card h-100">
              
@@ -126,11 +121,6 @@ document.addEventListener('DOMContentLoaded', function() {
          const col = document.createElement('div');
          col.className = 'col-md-6 col-lg-4 mb-4 project-item';
          col.setAttribute('data-category', project.category);
-         
-         const defaultImage = project.category === 'ml' ? 
-             'https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Machine+Learning' : 
-             'https://via.placeholder.com/300x200/9013FE/FFFFFF?text=Deep+Learning';
-         
          col.innerHTML = `
              <div class="project-card card h-100">
                  <div class="card-body">
@@ -180,7 +170,3 @@ document.addEventListener('DOMContentLoaded', function() {
      observer.observe(element);
  });
 });
-
-
-
-
