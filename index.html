@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body data-theme="light">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -44,20 +44,28 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 hero-content fade-in">
-                    <h1>HEY, I'm <span>Sarvesh Singh</span></h1>
-                    <h3 class="text-animation">I'm a <span id="typed-text"></span></h3>
-                    <p>Passionate developer with expertise in web development, machine learning, and software engineering. I love creating innovative solutions to complex problems.</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/sarvesh-singh-1a751a28b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/sarveshsinghthakur" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/s.sarvesh_singh?igsh=a2FlcmtldWRramZ5" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="card-container">
+                <div class="card">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 hero-content fade-in">
+                            <h1>HEY, I'm <span>Sarvesh Singh</span></h1>
+                            <h3 class="text-animation">I'm a <span id="typed-text" style="color: rgb(8, 90, 167);"></span></h3>
+                            <p>Passionate developer with expertise in web development, machine learning, and software engineering. I love creating innovative solutions to complex problems.</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/sarvesh-singh-1a751a28b/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://github.com/sarveshsinghthakur" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.instagram.com/s.sarvesh_singh?igsh=a2FlcmtldWRramZ5" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <a href="./sarveshsingh_web.pdf" class="btn btn-primary">Download Resume</a>
+                        </div>
+                        <div class="col-lg-6 hero-img fade-in delay-1">
+                            <div class="profile-container">
+                                <div class="profile-image">
+                                    <img src="image/sarvesh/jpg" alt="Sarvesh Singh">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <a href="./sarveshsingh_web.pdf" class="btn btn-primary">Download Resume</a>
-                </div>
-                <div class="col-lg-6 hero-img fade-in delay-1">
-                    <img src="image/sarvesh.jpg" alt="Sarvesh Singh" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -65,48 +73,52 @@
 
     <section id="skills" class="skills-section">
         <div class="container">
-            <div class="section-title">
-                <h1>SKILLS</h1>
-                <div class="underline"></div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3 fade-in">
-                    <div class="skill-card card">
-                        <img src="cards-skills/web.jpeg" class="card-img-top" alt="Web Development">
-                        <div class="card-body">
-                            <h4>WEB DEVELOPER</h4>
-                            <p class="card-text">Full stack web developer with expertise in frontend development and multiple completed projects.</p>
-                            <a href="https://github.com/sarveshsinghthakur?tab=repositories" target="_blank" class="btn btn-outline-light mt-3">View Projects</a>
-                        </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="section-title">
+                        <h1>SKILLS</h1>
+                        <div class="underline"></div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 fade-in delay-1">
-                    <div class="skill-card card">
-                        <img src="cards-skills/design.jpeg" class="card-img-top" alt="Web Design">
-                        <div class="card-body">
-                            <h4>WEB DESIGNER</h4>
-                            <p class="card-text">Experienced UI/UX designer with multiple internships focused on creating intuitive user interfaces.</p>
-                            <a href="https://www.linkedin.com/posts/activity-7194190319498809344-oBEo?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn btn-outline-light mt-3">View Work</a>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3 fade-in">
+                            <div class="skill-card card">
+                                <img src="cards-skills/web.jpg" class="card-img-top" alt="Web Development">
+                                <div class="card-body">
+                                    <h4>WEB DEVELOPER</h4>
+                                    <p class="card-text" style="color: rgb(83, 82, 82);">Full stack web developer with expertise in frontend development and multiple completed projects.</p>
+                                    <a href="https://github.com/sarveshsinghthakur?tab=repositories" target="_blank" class="btn btn-outline-light mt-3">View Projects</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 fade-in delay-2">
-                    <div class="skill-card card">
-                        <img src="cards-skills/software.jpeg" class="card-img-top" alt="Software Development">
-                        <div class="card-body">
-                            <h4>SOFTWARE DEVELOPER</h4>
-                            <p class="card-text">Proficient in C++, C, and JavaScript with experience in multiple software development internships.</p>
-                            <a href="https://github.com/sarveshsinghthakur" target="_blank" class="btn btn-outline-light mt-3">View Projects</a>
+                        <div class="col-md-6 col-lg-3 fade-in delay-1">
+                            <div class="skill-card card">
+                                <img src="cards-skills/design.jpeg" class="card-img-top" alt="Web Design">
+                                <div class="card-body">
+                                    <h4>WEB DESIGNER</h4>
+                                    <p class="card-text" style="color: rgb(83, 82, 82);">Experienced UI/UX designer with multiple internships focused on creating intuitive user interfaces.</p>
+                                    <a href="https://www.linkedin.com/posts/activity-7194190319498809344-oBEo?utm_source=share&utm_medium=member_desktop" target="_blank" class="btn btn-outline-light mt-3">View Work</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 fade-in delay-3">
-                    <div class="skill-card card">
-                        <img src="cards-skills/python.jpeg" class="card-img-top" alt="Python Development">
-                        <div class="card-body">
-                            <h4>PYTHON DEVELOPER</h4>
-                            <p class="card-text">Expertise in Python and frameworks like Flask & Django with multiple completed projects and internships.</p>
-                            <a href="https://github.com/sarveshsinghthakur" target="_blank" class="btn btn-outline-light mt-3">View Projects</a>
+                        <div class="col-md-6 col-lg-3 fade-in delay-2">
+                            <div class="skill-card card">
+                                <img src="cards-skills/software.jepg" class="card-img-top" alt="Software Development">
+                                <div class="card-body">
+                                    <h4>SOFTWARE DEVELOPER</h4>
+                                    <p class="card-text" style="color: rgb(83, 82, 82);">Proficient in C++, C, and JavaScript with experience in multiple software development internships.</p>
+                                    <a href="https://github.com/sarveshsinghthakur" target="_blank" class="btn btn-outline-light mt-3">View Projects</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 fade-in delay-3">
+                            <div class="skill-card card">
+                                <img src="cards-skills/python.jpeg" class="card-img-top" alt="Python Development">
+                                <div class="card-body">
+                                    <h4>PYTHON DEVELOPER</h4>
+                                    <p class="card-text" style="color: rgb(83, 82, 82);">Expertise in Python and frameworks like Flask & Django with multiple completed projects and internships.</p>
+                                    <a href="https://github.com/sarveshsinghthakur" target="_blank" class="btn btn-outline-light mt-3">View Projects</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,41 +128,45 @@
 
     <section id="education" class="education-section">
         <div class="container">
-            <div class="section-title">
-                <h1>EDUCATION</h1>
-                <div class="underline"></div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-4 fade-in">
-                    <div class="education-card card">
-                        <div class="card-header bg-primary text-white">2020</div>
-                        <div class="card-body">
-                            <h4>HIGH SCHOOL</h4>
-                            <p>Completed high schooling from Dev Samaj Vidya Niketan School, Gurgaon with an overall percentage of 88%.</p>
-                            <p><strong>88%</strong></p>
-                            <a href="https://devsamajvidyaniketan.com/" target="_blank" class="btn btn-primary">Visit School</a>
-                        </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="section-title">
+                        <h1>EDUCATION</h1>
+                        <div class="underline"></div>
                     </div>
-                </div>
-                <div class="col-md-4 fade-in delay-1">
-                    <div class="education-card card">
-                        <div class="card-header bg-success text-white">2022</div>
-                        <div class="card-body">
-                            <h4>INTER SCHOOL</h4>
-                            <p>Completed inter schooling from Dev Samaj Vidya Niketan School, Gurgaon with an overall percentage of 86%.</p>
-                            <p><strong>86%</strong></p>
-                            <a href="https://devsamajvidyaniketan.com/" target="_blank" class="btn btn-success">Visit School</a>
+                    <div class="row g-4">
+                        <div class="col-md-4 fade-in">
+                            <div class="education-card card">
+                                <div class="card-header bg-primary text-white">2020</div>
+                                <div class="card-body">
+                                    <h4>HIGH SCHOOL</h4>
+                                    <p>Completed high schooling from Dev Samaj Vidya Niketan School, Gurgaon with an overall percentage of 88%.</p>
+                                    <p><strong>88%</strong></p>
+                                    <a href="https://devsamajvidyaniketan.com/" target="_blank" class="btn btn-primary">Visit School</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 fade-in delay-2">
-                    <div class="education-card card">
-                        <div class="card-header bg-dark text-white">2022-2026</div>
-                        <div class="card-body">
-                            <h4>COLLEGE</h4>
-                            <p>Pursuing BTech in Electronics and Communication Engineering at DCRUST University with a CGPA of 7.0.</p>
-                            <p><strong>7.0 CGPA</strong></p>
-                            <a href="https://www.dcrustedp.in/" target="_blank" class="btn btn-dark">Visit University</a>
+                        <div class="col-md-4 fade-in delay-1">
+                            <div class="education-card card">
+                                <div class="card-header bg-success text-white">2022</div>
+                                <div class="card-body">
+                                    <h4>INTER SCHOOL</h4>
+                                    <p>Completed inter schooling from Dev Samaj Vidya Niketan School, Gurgaon with an overall percentage of 86%.</p>
+                                    <p><strong>86%</strong></p>
+                                    <a href="https://devsamajvidyaniketan.com/" target="_blank" class="btn btn-success">Visit School</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 fade-in delay-2">
+                            <div class="education-card card">
+                                <div class="card-header bg-dark text-white">2022-2026</div>
+                                <div class="card-body">
+                                    <h4>COLLEGE</h4>
+                                    <p>Pursuing BTech in Electronics and Communication Engineering at DCRUST University with a CGPA of 7.0.</p>
+                                    <p><strong>7.0 CGPA</strong></p>
+                                    <a href="https://www.dcrustedp.in/" target="_blank" class="btn btn-dark">Visit University</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -160,22 +176,26 @@
 
     <section id="projects" class="projects-section">
         <div class="container">
-            <div class="section-title">
-                <h1>PROJECTS</h1>
-                <div class="underline"></div>
-            </div>
-            
-            <div class="project-filters">
-                <button class="project-filter-btn active" data-filter="all">All Projects</button>
-                <button class="project-filter-btn" data-filter="web">Web Development</button>
-                <button class="project-filter-btn" data-filter="ml">Machine Learning</button>
-                <button class="project-filter-btn" data-filter="dl">Deep Learning</button>
-            </div>
-            
-            <div class="row g-4" id="projects-container">
-                <div class="col-12 text-center">
-                    <div class="spinner-border text-primary" role="status">
-                        <span class="visually-hidden">Loading projects...</span>
+            <div class="card-container">
+                <div class="card">
+                    <div class="section-title">
+                        <h1>PROJECTS</h1>
+                        <div class="underline"></div>
+                    </div>
+                    
+                    <div class="project-filters">
+                        <button class="project-filter-btn active" data-filter="all">All Projects</button>
+                        <button class="project-filter-btn" data-filter="web">Web Development</button>
+                        <button class="project-filter-btn" data-filter="ml">Machine Learning</button>
+                        <button class="project-filter-btn" data-filter="dl">Deep Learning</button>
+                    </div>
+                    
+                    <div class="row g-4" id="projects-container">
+                        <div class="col-12 text-center">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden" style="color: rgb(83, 82, 82);">Loading projects...</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -184,37 +204,41 @@
 
     <section id="contact" class="contact-section">
         <div class="container">
-            <div class="section-title">
-                <h1>CONTACT</h1>
-                <div class="underline"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 mb-5 mb-lg-0 fade-in">
-                    <div class="contact-info">
-                        <h3>Get In Touch</h3>
-                        <p>If you'd like to discuss potential opportunities or have any questions, feel free to reach out through any of these channels.</p>
-                        <div class="social-icons mt-4">
-                            <a href="https://www.linkedin.com/in/sarvesh-singh-1a751a28b/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                            <a href="https://github.com/sarveshsinghthakur" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                            <a href="https://www.instagram.com/s.sarvesh_singh?igsh=a2FlcmtldWRramZ5" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                        </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="section-title">
+                        <h1>CONTACT</h1>
+                        <div class="underline"></div>
                     </div>
-                </div>
-                <div class="col-lg-6 fade-in delay-1">
-                    <div class="contact-form">
-                        <form action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="61eec48d-90b9-489b-a580-04d0e323ddab">
-                            <div class="mb-3">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    <div class="row">
+                        <div class="col-lg-6 mb-5 mb-lg-0 fade-in">
+                            <div class="contact-info" style="color: rgb(83, 82, 82);">
+                                <h3>Get In Touch</h3>
+                                <p>If you'd like to discuss potential opportunities or have any questions, feel free to reach out through any of these channels.</p>
+                                <div class="social-icons mt-4">
+                                    <a href="https://www.linkedin.com/in/sarvesh-singh-1a751a28b/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                                    <a href="https://github.com/sarveshsinghthakur" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                                    <a href="https://www.instagram.com/s.sarvesh_singh?igsh=a2FlcmtldWRramZ5" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="col-lg-6 fade-in delay-1">
+                            <div class="contact-form">
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="61eec48d-90b9-489b-a580-04d0e323ddab">
+                                    <div class="mb-3">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name" required style="color: rgb(83, 82, 82);">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email" required style="color: rgb(83, 82, 82);">
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required style="color: rgb(83, 82, 82);"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                </form>
                             </div>
-                            <div class="mb-3">
-                                <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,7 +256,15 @@
         </div>
     </footer>
 
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <div class="dark-mode-toggle" id="themeToggle">
+        <span class="theme-icon">🌙</span>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   
+    
 </body>
 </html>
