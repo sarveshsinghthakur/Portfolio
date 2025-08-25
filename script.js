@@ -104,6 +104,13 @@
                         category: "ml",
                         language: "Python"
                     },
+                        {
+                        name: "Machine Learning",
+                        description: "This collection features a variety of ML problems solved using real-world datasets.",
+                        url: "https://github.com/sarveshsinghthakur/Machine-Learning",
+                        category: "ml",
+                        language: "Python"
+                    },
                     {
                         name: "Movie Recommendation System",
                         description: "Machine learning model that recommends movies based on user preferences.",
@@ -226,3 +233,4 @@
             }
         });
     
+
